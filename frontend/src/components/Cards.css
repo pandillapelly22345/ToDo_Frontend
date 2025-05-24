@@ -1,0 +1,76 @@
+.card-container {
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  animation: fadeSlideIn 0.5s ease;
+  transition: transform 0.3s;
+}
+
+.card-container:hover {
+  transform: translateY(-4px);
+}
+
+.card-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.delete-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #d9363e;
+}
+
+.date-box {
+  margin-top: 12px;
+  background-color: #f0f4ff;
+  padding: 10px;
+  border-left: 4px solid #66a6ff;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #555;
+  animation: slideUpDate 0.4s ease;
+}
+
+/* Animations */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpDate {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

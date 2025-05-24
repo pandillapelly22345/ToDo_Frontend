@@ -1,0 +1,42 @@
+/* Nav.css */
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #545f64;
+  padding: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  /* border-radius: 12px; */
+  /* margin: 3px auto; */
+  /* max-width: 600px; */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-buttons button {
+  background-color: #66a6ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-buttons button:hover {
+  background-color: #558ce0;
+  transform: translateY(-2px);
+}
+
+/* Reuse the animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -1,0 +1,64 @@
+/* AuthForms.css */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.5s ease-in-out;
+}
+
+label p {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+input {
+  padding: 5px;
+  width: 280px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #66a6ff;
+  box-shadow: 0 0 5px rgba(102, 166, 255, 0.5);
+}
+
+button {
+  background-color: #66a6ff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #558ce0;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
